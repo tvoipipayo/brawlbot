@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="24dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="BrawlBot" android:textSize="26sp" android:textStyle="bold"/>
+
+    <Button android:id="@+id/btnOverlay" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="1. Включить плавающее меню"/>
+    <Button android:id="@+id/btnAccess" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="2. Включить Accessibility (BrawlBot)"/>
+    <Button android:id="@+id/btnCapture" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="3. Разрешить захват экрана"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="16dp" android:textSize="13sp"
+        android:text="Открой Brawl Stars, сверху будет плавающее меню. Добавь бойцов и цели, нажми СТАРТ."/>
+</LinearLayout>

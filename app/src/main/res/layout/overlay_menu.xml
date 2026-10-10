@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCard"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6101418"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BrawlBot  ⋮⋮"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingBottom="6dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btnTabBrawlers" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="Бойцы"/>
+        <Button android:id="@+id/btnTabQueue" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="Очередь"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/tabBrawlers"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Spinner android:id="@+id/spinnerBrawler"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/editTarget"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="до (кубков)" android:inputType="number" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAdd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Добавить в очередь"/>
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/tabQueue"
+        android:layout_width="match_parent" android:layout_height="220dp">
+        <LinearLayout android:id="@+id/taskList"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <TextView android:id="@+id/status"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Остановлен" android:textColor="#9BE38B" android:paddingTop="6dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btnStart" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="СТАРТ"/>
+        <Button android:id="@+id/btnStop" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="СТОП"/>
+        <Button android:id="@+id/btnDebug" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:text="Визуалы"/>
+    </LinearLayout>
+</LinearLayout>
